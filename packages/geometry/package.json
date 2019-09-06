@@ -28,7 +28,7 @@
 	],
 	"main": "./dist/index.js",
 	"typings": "./dist/@types/index",
-	"peerDependencies": {
+	"dependencies": {
 		"mathjs": "^6.0.3"
 	},
 	"gitHead": "bb878657ba0c2f81764f32901fd96158a0f8352e"

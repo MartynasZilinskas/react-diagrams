@@ -29,11 +29,11 @@
 	"main": "./dist/index.js",
 	"typings": "./dist/@types/index",
 	"dependencies": {
-		"@projectstorm/geometry": "^6.0.1-beta.4",
-		"@projectstorm/react-canvas-core": "^6.0.1-beta.4"
+		"closest": "^0.0.1",
+		"@projectstorm/geometry": "6.0.1-beta.4",
+		"@projectstorm/react-canvas-core": "6.0.1-beta.4"
 	},
 	"peerDependencies": {
-		"closest": "^0.0.1",
 		"lodash": "4.*",
 		"react": "16.*"
 	},
