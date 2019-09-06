@@ -91,9 +91,11 @@ export class CanvasWidget extends React.Component<DiagramProps> {
 				onMouseMove={event => {
 					this.props.engine.getActionEventBus().fireAction({ event });
 				}}>
-				{model.getLayers().map(layer => {
+				{model.getLayers().map((layer, index) => {
+					// FIXME: Find a better property to use as key. (index is bad).
+					// https://blog.arkency.com/2014/10/react-dot-js-and-dynamic-children-why-the-keys-are-important/
 					return (
-						<TransformLayerWidget layer={layer}>
+						<TransformLayerWidget key={index} layer={layer}>
 							<SmartLayerWidget layer={layer} engine={this.props.engine} key={layer.getID()} />
 						</TransformLayerWidget>
 					);
