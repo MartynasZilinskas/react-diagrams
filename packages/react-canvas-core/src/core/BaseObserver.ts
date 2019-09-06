@@ -25,7 +25,7 @@ export type BaseListener = {
 	/**
 	 * Type for other events that will fire
 	 */
-	[key: string]: (event: BaseEvent) => any;
+	[key: string]: (event: BaseEvent & { [key: string]: any }) => any;
 };
 
 export interface ListenerHandle {
